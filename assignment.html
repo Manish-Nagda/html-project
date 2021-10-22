@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant-website</title>
+   <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+  
+      <nav class="menu">
+        <button id="bt3"><span onclick="myfun()">&#9776;</span>  Menu</button>   
+         <button id="bt4"><span onclick="myfu()">&#9876;</span></button> 
+      <ul id="menu-list">
+        
+          <li><a href="#">TACOS</a></li>
+          <li><a href="#">BEERS</a></li>
+          <li><a href="#">WINES</a></li>
+          <li><a href="#">DESSERTS</a></li>
+          <li><a href="#">RESERVATIN</a></li>
+      </ul>
+      </nav>
+   <div class="top">
+       <header class="imag-box">
+        <h1>terry's taco joint</h1>
+        <p>pretty good tacos</p>
+       </header>
+       <div class="card c1">
+        <p class="price">$1.99</p>
+        <p>tacos</p>
+       </div>
+       <div class="card c2">
+        <p class="price">$1.99</p>
+        <p>tacos</p>
+       </div>
+    </div>
+   <div class="container">
+
+    <div class="container-body">
+        <span class="icon">🌮</span>
+        <h3>Tacos</h3>  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+
+    </div>
+    <div class="container-body">
+        <span class="icon">🍺</span>
+        <h3>Beer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+    </div>
+    <div class="container-body">
+        <span class="icon">🍷</span>
+        <h3>Wine</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+    </div>
+    <div class="container-body">
+        <span class="icon">🎵</span>
+        <h3>Music</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+    </div>
+   </div>
+
+   <section class="extra-card">
+       
+    <img src="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/queso-taco.png
+    " alt="yummy taco" class="ima4">
+      
+   <div class="card-content">
+       <h2>Featured Taco</h2>
+       <p>Slim Profile, easy to hold and loaded with cheese.</p>
+       <p>This is the one you have been waiting for</p>
+       <button>"Learn More →"</button>
+   </div>
+      </section>
+
+    <section class="image-gallery">
+    <h2>Instant Grams</h2>
+    <img src="https://source.unsplash.com/random/201x201" alt="">
+    <img src="	https://source.unsplash.com/random/202x202" alt="">
+    <img src="https://source.unsplash.com/random/203x203" alt="">
+  <img src="https://source.unsplash.com/random/204x204" alt="">
+<img src="https://source.unsplash.com/random/205x205" alt="">
+<img src="	https://source.unsplash.com/random/206x206" alt="">
+<img src="https://source.unsplash.com/random/207x207" alt="">
+<img src="	https://source.unsplash.com/random/207x208" alt="">
+<img src="	https://source.unsplash.com/random/207x209" alt="">
+<img src="	https://source.unsplash.com/random/207x210" alt="">
+
+</section>
+
+
+     
+   
+   
+<script>
+    function myfun(){
+        document.getElementById("menu-list").setAttribute(
+            "style","display:grid;"
+        );
+       
+       
+    }
+    function myfu(){
+        document.getElementById("menu-list").style.display="none";
+    }
+</script>
+</body>
+</html>

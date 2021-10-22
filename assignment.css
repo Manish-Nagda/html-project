@@ -1,0 +1,233 @@
+body{
+    background-image: url(https://jolly-kalam-23776e.netlify.app/restaurantwebsite/assets/images/topography.svg),
+    linear-gradient(110deg, #f93d66, #6d47d9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+#bt3{
+    display: none;
+    margin-bottom: 20px;
+    padding:9px;
+    width:120px;
+    background-color: rgb(224, 224, 36);
+    font-size: 20px;
+    border: none;
+}
+#bt3 span{
+    padding: 3px;
+    color:black;
+}
+#bt3:hover #bt4{
+    display: block;
+}
+
+.menu ul{
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns:
+     repeat(auto-fit, minmax(100px, 1fr));
+}
+.menu ul li{
+    list-style: none;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    background:yellow;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.top{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "imag-box imag-box c1"
+        "imag-box imag-box c2";
+}
+.imag-box{
+    grid-area: imag-box;
+    min-height: 400px;
+    background-image:url(	https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg);
+    /* background-size: cover; */
+    
+    background-position: bottom right;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+}
+.imag-box h1{
+    color:black;
+    background:yellow;
+    padding: 10px;
+}
+.imag-box p{
+    background-color: yellow;
+    padding:5px;
+}
+.card{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background-color: rgb(216, 216, 35);
+}
+.c1{
+    grid-area:c1;
+}
+.c2{
+    grid-area:c2;
+}
+.price{
+    font-size:50px;
+}
+
+#bt4{
+    font-size: 30px;
+    border: none;
+    background-color:blanchedalmond;
+    margin: 5px;
+    display: none;
+}
+.container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 
+     repeat(auto-fit, minmax(200px,1fr));
+  
+    
+    
+}
+.container-body{
+  
+  margin-top: 18px;
+ text-align: center;
+  background-color: white;
+  background-attachment: fixed;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.container-body span{
+    font-size:50px;
+    padding-top: 10px;
+}
+.container-body p{
+    font-size: 18px;
+}
+.container-body h3{
+    font-size: 20px;
+    font-family:sans-serif;
+}
+.card-content button{
+    padding: 14px;
+    background-color: yellow;
+    width:200px;
+}
+
+.extra-card{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    
+    background-color: white;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ima4{
+    max-width: 100%;
+    background-attachment: fixed;
+}
+.card-content{
+    display: block;
+    background-size: cover;
+    max-width: 100%;  
+}
+ .image-gallery{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:
+     repeat(auto-fit, minmax(200px,1fr)); 
+    
+    }
+    .image-gallery img{
+       
+        width: 100%;
+    }
+    .image-gallery h2{
+        
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            grid-gap: 20px;
+            align-items: center;
+       
+    }
+    .image-gallery h2::before,.image-gallery h2::after{
+    
+        display: block;
+        content: '';
+        height: 10px;
+        background: linear-gradient(red,green,blue);
+    } 
+   
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:780px){
+    .top{
+        
+            grid-template-areas:
+                "imag-box"
+                "c1"
+                "c2";
+    }
+}
+   @media(max-width:1000px){
+       #menu-list{
+           display: none;
+           
+       }
+      
+       #bt3{
+           display: block;
+       }
+   }
+   @media(max-width:700px){
+    .extra-card{
+        grid-template-columns: 1fr;
+        
+    }
+    .ima4{
+       max-width: 100%;
+    }
+   }
